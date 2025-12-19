@@ -1,0 +1,15 @@
+E:\LPU Btech CSE\CG_TRAINING\CG_Day1\Programs\bin\Debug\net9.0\Programs.exe
+E:\LPU Btech CSE\CG_TRAINING\CG_Day1\Programs\bin\Debug\net9.0\Programs.deps.json
+E:\LPU Btech CSE\CG_TRAINING\CG_Day1\Programs\bin\Debug\net9.0\Programs.runtimeconfig.json
+E:\LPU Btech CSE\CG_TRAINING\CG_Day1\Programs\bin\Debug\net9.0\Programs.dll
+E:\LPU Btech CSE\CG_TRAINING\CG_Day1\Programs\bin\Debug\net9.0\Programs.pdb
+E:\LPU Btech CSE\CG_TRAINING\CG_Day1\Programs\obj\Debug\net9.0\Programs.GeneratedMSBuildEditorConfig.editorconfig
+E:\LPU Btech CSE\CG_TRAINING\CG_Day1\Programs\obj\Debug\net9.0\Programs.AssemblyInfoInputs.cache
+E:\LPU Btech CSE\CG_TRAINING\CG_Day1\Programs\obj\Debug\net9.0\Programs.AssemblyInfo.cs
+E:\LPU Btech CSE\CG_TRAINING\CG_Day1\Programs\obj\Debug\net9.0\Programs.csproj.CoreCompileInputs.cache
+E:\LPU Btech CSE\CG_TRAINING\CG_Day1\Programs\obj\Debug\net9.0\Programs.sourcelink.json
+E:\LPU Btech CSE\CG_TRAINING\CG_Day1\Programs\obj\Debug\net9.0\Programs.dll
+E:\LPU Btech CSE\CG_TRAINING\CG_Day1\Programs\obj\Debug\net9.0\refint\Programs.dll
+E:\LPU Btech CSE\CG_TRAINING\CG_Day1\Programs\obj\Debug\net9.0\Programs.pdb
+E:\LPU Btech CSE\CG_TRAINING\CG_Day1\Programs\obj\Debug\net9.0\Programs.genruntimeconfig.cache
+E:\LPU Btech CSE\CG_TRAINING\CG_Day1\Programs\obj\Debug\net9.0\ref\Programs.dll
