@@ -181,43 +181,65 @@ class Program
       
         // Q) Program to print armstrong numbers from n1 to n2
 
-             int flag=0;
-             Console.WriteLine("Enter Starting Range to check for armstrong number");
-             int number1=Convert.ToInt32(Console.ReadLine());
+        //      int flag=0;
+        //      Console.WriteLine("Enter Starting Range to check for armstrong number");
+        //      int number1=Convert.ToInt32(Console.ReadLine());    
+
+        //      Console.WriteLine("Enter Ending Range to check for armstrong number");
+        //      int number2=Convert.ToInt32(Console.ReadLine());
              
+        //      for(int i = number1; i <= number2; i++)
+        // {
+        //     int duplicate=i;
+        //     int number=i;
+        //     string number_str=Convert.ToString(i);
+        //     int len=number_str.Length;
 
-             Console.WriteLine("Enter Ending Range to check for armstrong number");
-             int number2=Convert.ToInt32(Console.ReadLine());
-             
-             for(int i = number1; i <= number2; i++)
-        {
-            int duplicate=i;
-            int number=i;
-            string number_str=Convert.ToString(i);
-            int len=number_str.Length;
+        //     int sum=0;
 
-            int sum=0;
+        //      while (number > 0)
+        //      {
+        //          int rem=number%10;
+        //          sum+=Convert.ToInt32(Math.Pow(rem,len));
+        //          number/=10;
+        //      }
 
-             while (number > 0)
-             {
-                 int rem=number%10;
-                 sum+=Convert.ToInt32(Math.Pow(rem,len));
-                 number/=10;
-             }
-
-             if (sum == duplicate)
-             {
-             Console.WriteLine($"Given number {duplicate} is Armstrong number");
-             flag=1;
-
-
-             }
-        }
-        if (flag == 0)
-        {
+        //      if (sum == duplicate)
+        //      {
+        //      Console.WriteLine($"Given number {duplicate} is Armstrong number");
+        //      flag=1;
+        //      }
+        // }
+        // if (flag == 0)
+        // {
             
-             Console.WriteLine($"There is no any Armstrong number.");
+        //      Console.WriteLine($"There is no any Armstrong number.");
+        // }
+
+    // -------------------------------------------------------------------------------------------------
+
+        // Q)  program to check whether the number is prime or not
+
+        int number=Convert.ToInt32(Console.ReadLine());
+        int count=0;
+
+        for(int i = 2; i<=number; i++)
+        {
+            if (number % i == 0)
+            {
+                count=1;
+            }
         }
+        if (count == 1)
+        {
+            Console.WriteLine($"Given number {number} is Prime number");
+        }
+        else
+        {
+            Console.WriteLine($"Given number {number} is not Prime number");
+            
+        }
+
 
 
 
