@@ -4,10 +4,10 @@ namespace DAY_1;
     class Employee
 {
     int Id;
-    string Name;
-    string Dept;
+    string Name="";
+    string Dept=string.Empty;
     float Salary;
-    string Gender;
+    string Gender="";
 
 
     public void AcceptDetails()
@@ -32,6 +32,7 @@ namespace DAY_1;
     {
         Console.WriteLine();
         Console.WriteLine("Employee Data  Are: ");
+        Console.WriteLine("---------------------------");
 
         // This is one of the way to print the value using String interpolation
          // Console.WriteLine($"Employee Name: {Name}");
