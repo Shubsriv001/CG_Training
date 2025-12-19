@@ -152,33 +152,72 @@ class Program
 
     // Q)WAP to Check for Armstrong Number
 
-        Console.WriteLine("Enter the number to check for armstrong number");
-        string number_string=Console.ReadLine();
-        int sum=0;
-        int len=number_string.Length;
-        int number=Convert.ToInt32(number_string);
-        int duplicate=number;
+        // Console.WriteLine("Enter the number to check for armstrong number");
+        // string number_string=Console.ReadLine();
+        // int sum=0;
+        // int len=number_string.Length;
+        // int number=Convert.ToInt32(number_string);
+        // int duplicate=number;
 
-        while (number > 0)
-        {
-            int rem=number%10;
-            sum+=Convert.ToInt32(Math.Pow(rem,len));
-            number/=10;
-        }
+        // while (number > 0)
+        // {
+        //     int rem=number%10;
+        //     sum+=Convert.ToInt32(Math.Pow(rem,len));
+        //     number/=10;
+        // }
 
-        if (sum == duplicate)
-        {
-        Console.WriteLine($"Given number {duplicate} is Armstrong number");
+        // if (sum == duplicate)
+        // {
+        // Console.WriteLine($"Given number {duplicate} is Armstrong number");
             
-        }
-        else
-        {
+        // }
+        // else
+        // {
             
-        Console.WriteLine($"Given number {duplicate} is not Armstrong number");
-        }
+        // Console.WriteLine($"Given number {duplicate} is not Armstrong number");
+        // }
 
-            
+        // ----------------------------------------------------------------------------------------------------------
       
+        // Q) Program to print armstrong numbers from n1 to n2
+
+             int flag=0;
+             Console.WriteLine("Enter Starting Range to check for armstrong number");
+             int number1=Convert.ToInt32(Console.ReadLine());
+             
+
+             Console.WriteLine("Enter Ending Range to check for armstrong number");
+             int number2=Convert.ToInt32(Console.ReadLine());
+             
+             for(int i = number1; i <= number2; i++)
+        {
+            int duplicate=i;
+            int number=i;
+            string number_str=Convert.ToString(i);
+            int len=number_str.Length;
+
+            int sum=0;
+
+             while (number > 0)
+             {
+                 int rem=number%10;
+                 sum+=Convert.ToInt32(Math.Pow(rem,len));
+                 number/=10;
+             }
+
+             if (sum == duplicate)
+             {
+             Console.WriteLine($"Given number {duplicate} is Armstrong number");
+             flag=1;
+
+
+             }
+        }
+        if (flag == 0)
+        {
+            
+             Console.WriteLine($"There is no any Armstrong number.");
+        }
 
 
 
