@@ -150,6 +150,33 @@ class Program
 
     //------------------------------------------------------------------------------------------
 
+    // Q)WAP to Check for Armstrong Number
+
+        Console.WriteLine("Enter the number to check for armstrong number");
+        string number_string=Console.ReadLine();
+        int sum=0;
+        int len=number_string.Length;
+        int number=Convert.ToInt32(number_string);
+        int duplicate=number;
+
+        while (number > 0)
+        {
+            int rem=number%10;
+            sum+=Convert.ToInt32(Math.Pow(rem,len));
+            number/=10;
+        }
+
+        if (sum == duplicate)
+        {
+        Console.WriteLine($"Given number {duplicate} is Armstrong number");
+            
+        }
+        else
+        {
+            
+        Console.WriteLine($"Given number {duplicate} is not Armstrong number");
+        }
+
             
       
 
