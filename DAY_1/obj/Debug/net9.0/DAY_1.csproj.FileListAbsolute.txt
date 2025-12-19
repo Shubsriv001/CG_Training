@@ -12,3 +12,4 @@ E:\LPU Btech CSE\CG_TRAINING\DAY_1\obj\Debug\net9.0\refint\DAY_1.dll
 E:\LPU Btech CSE\CG_TRAINING\DAY_1\obj\Debug\net9.0\DAY_1.pdb
 E:\LPU Btech CSE\CG_TRAINING\DAY_1\obj\Debug\net9.0\DAY_1.genruntimeconfig.cache
 E:\LPU Btech CSE\CG_TRAINING\DAY_1\obj\Debug\net9.0\ref\DAY_1.dll
+E:\LPU Btech CSE\CG_TRAINING\DAY_1\obj\Debug\net9.0\DAY_1.sourcelink.json
