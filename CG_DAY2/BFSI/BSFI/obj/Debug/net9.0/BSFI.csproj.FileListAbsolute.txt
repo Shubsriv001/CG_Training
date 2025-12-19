@@ -1,0 +1,15 @@
+E:\LPU Btech CSE\CG_TRAINING\CG_Day2\BFSI\BSFI\bin\Debug\net9.0\BSFI.exe
+E:\LPU Btech CSE\CG_TRAINING\CG_Day2\BFSI\BSFI\bin\Debug\net9.0\BSFI.deps.json
+E:\LPU Btech CSE\CG_TRAINING\CG_Day2\BFSI\BSFI\bin\Debug\net9.0\BSFI.runtimeconfig.json
+E:\LPU Btech CSE\CG_TRAINING\CG_Day2\BFSI\BSFI\bin\Debug\net9.0\BSFI.dll
+E:\LPU Btech CSE\CG_TRAINING\CG_Day2\BFSI\BSFI\bin\Debug\net9.0\BSFI.pdb
+E:\LPU Btech CSE\CG_TRAINING\CG_Day2\BFSI\BSFI\obj\Debug\net9.0\BSFI.GeneratedMSBuildEditorConfig.editorconfig
+E:\LPU Btech CSE\CG_TRAINING\CG_Day2\BFSI\BSFI\obj\Debug\net9.0\BSFI.AssemblyInfoInputs.cache
+E:\LPU Btech CSE\CG_TRAINING\CG_Day2\BFSI\BSFI\obj\Debug\net9.0\BSFI.AssemblyInfo.cs
+E:\LPU Btech CSE\CG_TRAINING\CG_Day2\BFSI\BSFI\obj\Debug\net9.0\BSFI.csproj.CoreCompileInputs.cache
+E:\LPU Btech CSE\CG_TRAINING\CG_Day2\BFSI\BSFI\obj\Debug\net9.0\BSFI.sourcelink.json
+E:\LPU Btech CSE\CG_TRAINING\CG_Day2\BFSI\BSFI\obj\Debug\net9.0\BSFI.dll
+E:\LPU Btech CSE\CG_TRAINING\CG_Day2\BFSI\BSFI\obj\Debug\net9.0\refint\BSFI.dll
+E:\LPU Btech CSE\CG_TRAINING\CG_Day2\BFSI\BSFI\obj\Debug\net9.0\BSFI.pdb
+E:\LPU Btech CSE\CG_TRAINING\CG_Day2\BFSI\BSFI\obj\Debug\net9.0\BSFI.genruntimeconfig.cache
+E:\LPU Btech CSE\CG_TRAINING\CG_Day2\BFSI\BSFI\obj\Debug\net9.0\ref\BSFI.dll
