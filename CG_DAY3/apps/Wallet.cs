@@ -2,7 +2,7 @@
 
 // class Wallet
 // {
-//     private Double money;
+//     private Double money=100;
 //     public void addMoney(double Amt)
 //     {
 //         money+=Amt;
