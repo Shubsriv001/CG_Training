@@ -6,9 +6,13 @@
 // {
 //     public void Calculator()
 //     {
-//         static void add(int a, int b)
+//         int k=10;
+//          void add(int a, int b)
 //         {
 //             Console.WriteLine($"Sum of the number is {a+b}");
+//             Console.WriteLine(k);
+
+
 
 //         }
 
