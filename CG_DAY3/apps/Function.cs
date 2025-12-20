@@ -1,9 +1,9 @@
-using System;
-using System.Runtime.InteropServices;
-using System.Security.Cryptography.X509Certificates;
+// using System;
+// using System.Runtime.InteropServices;
+// using System.Security.Cryptography.X509Certificates;
 
-class function
-{
+// class function
+// {
 
 // --------------------------------------------------------------------------------------------
 
@@ -30,18 +30,19 @@ class function
     // Use of param-> use to take multiple input as argument while calling the function
 
     // param should be always at the last
-     public void add_num(params int[] nums)
-    {
-        int sum=0;
-        foreach(int n in nums)
-        {
-            sum+=n;
-        }
 
-        // Console.WriteLine(string.Join(" ",week));
-        Console.WriteLine(sum);
-        Console.WriteLine(a);
-    }
+    // NOTE: Params cannot use in,out andd ref
+    //  public void add_num(params int[] nums)
+    // {
+    //     int sum=0;
+    //     foreach(int n in nums)
+    //     {
+    //         sum+=n;
+    //     }
+
+    //     // Console.WriteLine(string.Join(" ",week));
+    //     Console.WriteLine(sum);
+    // }
         
 
 // ----------------------------------------------------------------------------
@@ -91,10 +92,10 @@ class function
 
 
 // ----------------------------------------------------------------------------------------------
-    public static void Main(string[] args)
-    {
-        //creating object on the class
-        function fun_obj=new function();
+    // public static void Main(string[] args)
+    // {
+    //     //creating object on the class
+    //     function fun_obj=new function();
 
 // --------------------------------------------------------------------------------------------
 
@@ -137,9 +138,9 @@ class function
     // fun_obj.add_num(1,2,3,4,5,6,7,8,9,10);
 
     // If we want to pass the array to the param we need to pass it as a single array variable
-    int []brr={1,2,3,4,5,6,7,8,9,10};
+    // int []brr={1,2,3,4,5,6,7,8,9,10};
 
-    fun_obj.add_num(brr);
+    // fun_obj.add_num(brr);
 
 
 
@@ -183,5 +184,8 @@ class function
 // int num = 50;
 // function.show(num);
 // --------------------------------------------------------------------------------------------
-    }
-}
+
+
+
+//     }
+// }
