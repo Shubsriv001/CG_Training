@@ -1,0 +1,15 @@
+E:\LPU Btech CSE\CG_TRAINING\CG_Day3\apps\obj\Debug\net9.0\apps.GeneratedMSBuildEditorConfig.editorconfig
+E:\LPU Btech CSE\CG_TRAINING\CG_Day3\apps\obj\Debug\net9.0\apps.AssemblyInfoInputs.cache
+E:\LPU Btech CSE\CG_TRAINING\CG_Day3\apps\obj\Debug\net9.0\apps.AssemblyInfo.cs
+E:\LPU Btech CSE\CG_TRAINING\CG_Day3\apps\obj\Debug\net9.0\apps.csproj.CoreCompileInputs.cache
+E:\LPU Btech CSE\CG_TRAINING\CG_Day3\apps\obj\Debug\net9.0\apps.sourcelink.json
+E:\LPU Btech CSE\CG_TRAINING\CG_Day3\apps\bin\Debug\net9.0\apps.exe
+E:\LPU Btech CSE\CG_TRAINING\CG_Day3\apps\bin\Debug\net9.0\apps.deps.json
+E:\LPU Btech CSE\CG_TRAINING\CG_Day3\apps\bin\Debug\net9.0\apps.runtimeconfig.json
+E:\LPU Btech CSE\CG_TRAINING\CG_Day3\apps\bin\Debug\net9.0\apps.dll
+E:\LPU Btech CSE\CG_TRAINING\CG_Day3\apps\bin\Debug\net9.0\apps.pdb
+E:\LPU Btech CSE\CG_TRAINING\CG_Day3\apps\obj\Debug\net9.0\apps.dll
+E:\LPU Btech CSE\CG_TRAINING\CG_Day3\apps\obj\Debug\net9.0\refint\apps.dll
+E:\LPU Btech CSE\CG_TRAINING\CG_Day3\apps\obj\Debug\net9.0\apps.pdb
+E:\LPU Btech CSE\CG_TRAINING\CG_Day3\apps\obj\Debug\net9.0\apps.genruntimeconfig.cache
+E:\LPU Btech CSE\CG_TRAINING\CG_Day3\apps\obj\Debug\net9.0\ref\apps.dll
