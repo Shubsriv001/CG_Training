@@ -1,0 +1,15 @@
+E:\LPU Btech CSE\CG_TRAINING\CG_Day4\Library Management System\library_management_system\bin\Debug\net9.0\library_management_system.exe
+E:\LPU Btech CSE\CG_TRAINING\CG_Day4\Library Management System\library_management_system\bin\Debug\net9.0\library_management_system.deps.json
+E:\LPU Btech CSE\CG_TRAINING\CG_Day4\Library Management System\library_management_system\bin\Debug\net9.0\library_management_system.runtimeconfig.json
+E:\LPU Btech CSE\CG_TRAINING\CG_Day4\Library Management System\library_management_system\bin\Debug\net9.0\library_management_system.dll
+E:\LPU Btech CSE\CG_TRAINING\CG_Day4\Library Management System\library_management_system\bin\Debug\net9.0\library_management_system.pdb
+E:\LPU Btech CSE\CG_TRAINING\CG_Day4\Library Management System\library_management_system\obj\Debug\net9.0\library_management_system.GeneratedMSBuildEditorConfig.editorconfig
+E:\LPU Btech CSE\CG_TRAINING\CG_Day4\Library Management System\library_management_system\obj\Debug\net9.0\library_management_system.AssemblyInfoInputs.cache
+E:\LPU Btech CSE\CG_TRAINING\CG_Day4\Library Management System\library_management_system\obj\Debug\net9.0\library_management_system.AssemblyInfo.cs
+E:\LPU Btech CSE\CG_TRAINING\CG_Day4\Library Management System\library_management_system\obj\Debug\net9.0\library_management_system.csproj.CoreCompileInputs.cache
+E:\LPU Btech CSE\CG_TRAINING\CG_Day4\Library Management System\library_management_system\obj\Debug\net9.0\library_management_system.sourcelink.json
+E:\LPU Btech CSE\CG_TRAINING\CG_Day4\Library Management System\library_management_system\obj\Debug\net9.0\library_management_system.dll
+E:\LPU Btech CSE\CG_TRAINING\CG_Day4\Library Management System\library_management_system\obj\Debug\net9.0\refint\library_management_system.dll
+E:\LPU Btech CSE\CG_TRAINING\CG_Day4\Library Management System\library_management_system\obj\Debug\net9.0\library_management_system.pdb
+E:\LPU Btech CSE\CG_TRAINING\CG_Day4\Library Management System\library_management_system\obj\Debug\net9.0\library_management_system.genruntimeconfig.cache
+E:\LPU Btech CSE\CG_TRAINING\CG_Day4\Library Management System\library_management_system\obj\Debug\net9.0\ref\library_management_system.dll
