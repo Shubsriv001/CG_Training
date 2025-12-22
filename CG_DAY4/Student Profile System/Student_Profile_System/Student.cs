@@ -26,6 +26,7 @@ class Student
         }
     }
 
+
     public string name_property
     {
         get{return name;}
