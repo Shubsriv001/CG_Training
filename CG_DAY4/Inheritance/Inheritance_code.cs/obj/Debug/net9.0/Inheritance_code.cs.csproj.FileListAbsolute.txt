@@ -1,0 +1,15 @@
+E:\LPU Btech CSE\CG_TRAINING\CG_Day4\Inheritance\Inheritance_code.cs\bin\Debug\net9.0\Inheritance_code.cs.exe
+E:\LPU Btech CSE\CG_TRAINING\CG_Day4\Inheritance\Inheritance_code.cs\bin\Debug\net9.0\Inheritance_code.cs.deps.json
+E:\LPU Btech CSE\CG_TRAINING\CG_Day4\Inheritance\Inheritance_code.cs\bin\Debug\net9.0\Inheritance_code.cs.runtimeconfig.json
+E:\LPU Btech CSE\CG_TRAINING\CG_Day4\Inheritance\Inheritance_code.cs\bin\Debug\net9.0\Inheritance_code.cs.dll
+E:\LPU Btech CSE\CG_TRAINING\CG_Day4\Inheritance\Inheritance_code.cs\bin\Debug\net9.0\Inheritance_code.cs.pdb
+E:\LPU Btech CSE\CG_TRAINING\CG_Day4\Inheritance\Inheritance_code.cs\obj\Debug\net9.0\Inheritance_code.cs.GeneratedMSBuildEditorConfig.editorconfig
+E:\LPU Btech CSE\CG_TRAINING\CG_Day4\Inheritance\Inheritance_code.cs\obj\Debug\net9.0\Inheritance_code.cs.AssemblyInfoInputs.cache
+E:\LPU Btech CSE\CG_TRAINING\CG_Day4\Inheritance\Inheritance_code.cs\obj\Debug\net9.0\Inheritance_code.cs.AssemblyInfo.cs
+E:\LPU Btech CSE\CG_TRAINING\CG_Day4\Inheritance\Inheritance_code.cs\obj\Debug\net9.0\Inheritance_code.cs.csproj.CoreCompileInputs.cache
+E:\LPU Btech CSE\CG_TRAINING\CG_Day4\Inheritance\Inheritance_code.cs\obj\Debug\net9.0\Inheritance_code.cs.sourcelink.json
+E:\LPU Btech CSE\CG_TRAINING\CG_Day4\Inheritance\Inheritance_code.cs\obj\Debug\net9.0\Inheritance_code.cs.dll
+E:\LPU Btech CSE\CG_TRAINING\CG_Day4\Inheritance\Inheritance_code.cs\obj\Debug\net9.0\refint\Inheritance_code.cs.dll
+E:\LPU Btech CSE\CG_TRAINING\CG_Day4\Inheritance\Inheritance_code.cs\obj\Debug\net9.0\Inheritance_code.cs.pdb
+E:\LPU Btech CSE\CG_TRAINING\CG_Day4\Inheritance\Inheritance_code.cs\obj\Debug\net9.0\Inheritance_code.cs.genruntimeconfig.cache
+E:\LPU Btech CSE\CG_TRAINING\CG_Day4\Inheritance\Inheritance_code.cs\obj\Debug\net9.0\ref\Inheritance_code.cs.dll
