@@ -22,7 +22,9 @@
 
 //         public void notification()
 //         {
-//             Console.WriteLine("Notification message sent");
+//                 Console.WriteLine("Please Enter the Message:");
+//                 string message=Console.ReadLine();
+//             Console.WriteLine($"Notification message sent: {message}");
 //                     }
 //     }
 //     public static void Main(string[] args)
