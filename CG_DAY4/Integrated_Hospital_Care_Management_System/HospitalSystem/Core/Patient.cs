@@ -1,20 +1,19 @@
 using System;
-using System.Security.Cryptography.X509Certificates;
 
 namespace HospitalSystem.Core
 {
     
 class Patient
 {
-    private string patientName;
-    private int patientAge;
-    private int patientId;
-    private string patientMedicalHistory;
-    private string[]arr_patient_name;
-    private int[]arr_patient_age;
-    private int[]arr_patient_id;
-    private string[]arr_patient_medical_history;
-    private int patient_number_add;
+    string patientName="";
+    int patientAge;
+    int patientId;
+    string patientMedicalHistory;
+     string[]arr_patient_name;
+     int[]arr_patient_age;
+    int[]arr_patient_id;
+    string[]arr_patient_medical_history;
+    int patient_number_add;
 
 
     public void Patient_data()

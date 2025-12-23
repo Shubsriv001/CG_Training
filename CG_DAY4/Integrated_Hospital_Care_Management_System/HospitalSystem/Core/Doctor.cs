@@ -74,7 +74,7 @@ namespace HospitalSystem.Core
             Console.WriteLine("---------------------- Doctors List ---------------------------");
             if (arr_doc_name == null || arr_doc_name.Length == 0)
             {
-                Console.WriteLine("Regret, there are no doctors present in the hospital.");  
+                Console.WriteLine("Regret, there are no doctors present in the hospital Please Add Doctor.");  
                 Console.WriteLine();
             }
             else

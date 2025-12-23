@@ -1,75 +1,133 @@
 ﻿using System;
-using System.ComponentModel;
-using System.Diagnostics;
-using System.Dynamic;
 using HospitalSystem.Core;
 using HospitalSystem.Services;
-
 
 class Program
 {
     public static void Main()
     {
+        Patient patient_obj = new Patient();
+        Appointment appointment_obj = new Appointment();
+        BillingService billingService_obj = new BillingService();
+        DiagnosisService diagnosisservice_obj = new DiagnosisService();
+        HospitalStay hospitalStay_obj = new HospitalStay();
+        InsuranceService insuranceService_obj = new InsuranceService();
 
-        // Object For Patient
-    // Patient patient_obj=new Patient();
-    // patient_obj.Patient_data();
-    // patient_obj.get_patient_data();
-    // patient_obj.GetMedicalHistory();
-    
+        bool run = true;
+        while (run)
+        {
+            Console.WriteLine("\nWelcome to the Hospital System\n");
+            Console.WriteLine("1) Appointment");
+            Console.WriteLine("2) Doctors");
+            Console.WriteLine("3) Patient");
+            Console.WriteLine("4) Billing Service");
+            Console.WriteLine("5) Diagnosis Service");
+            Console.WriteLine("6) Hospital Stays");
+            Console.WriteLine("7) Insurance Service");
+            Console.WriteLine("8) Exit");
+            Console.Write("Enter Choice: ");
 
-    // Object For Doctor
+            int choice = Convert.ToInt32(Console.ReadLine());
 
-    // Doctor doctor_obj=new Doctor();
-    // doctor_obj.add_doctor();
-    // doctor_obj.show_doctors();
+            switch (choice)
+            {
+                case 1: 
+                    Console.WriteLine("1) Schedule Appointment");
+                    Console.WriteLine("2) Back");
+                    int appointmentChoice = Convert.ToInt32(Console.ReadLine());
 
-    // Object For Billing Service
-    // BillingService billingService_obj=new BillingService();
-    // billingService_obj.total();
+                    switch (appointmentChoice)
+                    {
+                        case 1:
 
+                        appointment_obj.Schedule_appointment_doctor();
+                            Console.Write("Patient Name: ");
+                            string patientName = Console.ReadLine();
+                            Console.Write("Doctor Name: ");
+                            string doctorName = Console.ReadLine();
+                            Console.Write("Date & Time in the format dd/mm/yyyy-10:15 AM/PM:");
+                            string dateTime = Console.ReadLine();
+                            appointment_obj.Schedule_appointment(patientName, doctorName, dateTime);
+                            break;
 
-    // Object For Diagnosis Service
+                        case 2:
+                            break;
+                    }
+                    break;
 
-    // DiagnosisService diagnosisservice_obj=new DiagnosisService();
-    // diagnosisservice_obj.Evaluate();
+                case 2: 
+                    Console.WriteLine("1) Add Doctor");
+                    Console.WriteLine("2) View Doctors");
+                    Console.WriteLine("3) Back");
+                    int doctorChoice = Convert.ToInt32(Console.ReadLine());
 
+                    switch (doctorChoice)
+                    {
+                        case 1:
+                            appointment_obj.add_doctor();
+                            break;
+                        case 2:
+                            appointment_obj.show_doctors();
+                            break;
+                        case 3:
+                            break;
+                    }
+                    break;
 
+                case 3: 
+                    Console.WriteLine("1) Add Patient");
+                    Console.WriteLine("2) View Patient");
+                    Console.WriteLine("3) View Patient Medical History");
+                    Console.WriteLine("4) Back");
+                    int patientChoice = Convert.ToInt32(Console.ReadLine());
 
-           //Object For Appointment
+                    switch (patientChoice)
+                    {
+                        case 1:
+                            patient_obj.Patient_data();
+                            break;
+                        case 2:
+                            patient_obj.get_patient_data();
+                            break;
+                        case 3:
+                            patient_obj.GetMedicalHistory();
+                            break;
+                        case 4:
+                            break;
+                    }
+                    break;
 
-            // Appointment appointment_obj = new Appointment();
-            // appointment_obj.show_doctors();
+                case 4:
+                    billingService_obj.total();
+                    break;
 
-            // Console.WriteLine("----------------------------Book Your Appointment-------------------------");
+                case 5:
+                    diagnosisservice_obj.Evaluate();
+                    break;
 
-            // Console.WriteLine("Please enter the patient's name:");
-            // string patientName = Console.ReadLine();
-            // Console.WriteLine("Please enter the doctor name you want to book an appointment with:");
-            // string doctorName = Console.ReadLine();
-            // Console.WriteLine("Please enter the Date and Time for the appointment Like (dd/mm/yyyy-12PM):");
-            // string date_Time = Console.ReadLine();
-            // Console.WriteLine();
-            // appointment_obj.Schedule_appointment(patientName, doctorName, date_Time);
+                case 6:
+                    Console.Write("Enter number of days: ");
+                    int days = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine($"Total Hospital Stay Count: {hospitalStay_obj.calculate_Hospital_Stay(days)}");
+                    break;
 
+                case 7:
+                    Console.Write("Bill Amount: ");
+                    double bill = Convert.ToDouble(Console.ReadLine());
+                    Console.Write("Coverage %: ");
+                    double cover = Convert.ToDouble(Console.ReadLine());
+                    insuranceService_obj.apply_insurance_Coverage(bill, cover);
+                    break;
 
-            //object for hospital stays
-            // HospitalStay hospitalStay_obj=new HospitalStay();
-            // Console.WriteLine("Enter number of Days to calculate: ");
-            // int number_day_stay=Convert.ToInt32(Console.ReadLine());
-            // hospitalStay_obj.calculate_Hospital_Stay(number_day_stay);
-    
+                case 8:
+                    run = false;
+                    Console.WriteLine("You Exited From Selection Process Successfully!");
+                    break;
 
-
-    // obj for InsuranceService
-
-    // InsuranceService insuranceService_obj =new InsuranceService();
-    // Console.WriteLine("Enter Bill Amount: ");
-    // double bill_Amount=Convert.ToDouble(Console.ReadLine());
-    // Console.WriteLine("Enter Coverage Percentage: ");
-    // double Coverage_percentage=Convert.ToDouble(Console.ReadLine());
-    // insuranceService_obj.apply_insurance_Coverage(bill_Amount,Coverage_percentage);
+                default:
+                    Console.WriteLine("Invalid Choice!");
+                    break;
+            }
+        }
     }
-    
 }
-
