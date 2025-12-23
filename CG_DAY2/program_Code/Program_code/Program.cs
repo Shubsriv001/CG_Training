@@ -220,27 +220,62 @@ class Program
 
         // Q)  program to check whether the number is prime or not
 
-        int number=Convert.ToInt32(Console.ReadLine());
-        int count=0;
+        // int number=Convert.ToInt32(Console.ReadLine());
+        // int count=0;
 
-        for(int i = 2; i<=number; i++)
-        {
-            if (number % i == 0)
-            {
-                count=1;
-            }
-        }
-        if (count == 1)
-        {
-            Console.WriteLine($"Given number {number} is Prime number");
-        }
-        else
-        {
-            Console.WriteLine($"Given number {number} is not Prime number");
+        // for(int i = 2; i<=number; i++)
+        // {
+        //     if (number % i == 0)
+        //     {
+        //         count=1;
+        //     }
+        // }
+        // if (count == 1)
+        // {
+        //     Console.WriteLine($"Given number {number} is Prime number");
+        // }
+        // else
+        // {
+        //     Console.WriteLine($"Given number {number} is not Prime number");
             
-        }
+        // }
+
+    //  --------------------------------------------------------------------------------------------------   
+        // Q)  program to check whether the number is prime or not form the given range and print the number
+
+      Console.WriteLine("Enter the Starting range for prime number");
+    int start_range = Convert.ToInt32(Console.ReadLine());
+    
+    Console.WriteLine("Enter the Ending range for prime number");
+    int end_Range = Convert.ToInt32(Console.ReadLine());
+    
+    for (int i = start_range; i <= end_Range; i++)
+        {
+            int count = 0;
+
+            if (i < 2)
+            {
+                Console.WriteLine($"Given number {i} is not Prime number");
+                continue;
+            }
+
+            for (int j = 2; j <=i/2; j++)
+            {
+                if (i % j == 0)
+                {
+                    count = 1;
+                
+                }
+            }
+
+            if (count == 0)
+                Console.WriteLine($"Given number {i} is Prime number");
+            else
+                   Console.WriteLine($"Given number {i} is not Prime number");
+}
 
 
+    // ------------------------------------------------------------------------------------------------
 
 
 
