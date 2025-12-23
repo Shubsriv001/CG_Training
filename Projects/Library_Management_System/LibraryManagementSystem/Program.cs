@@ -10,7 +10,6 @@ class Program
          book_obj.calculate_late_fee();
          book_obj.display_item_details();
 
-
          magazine_obj.calculate_late_fee();
          magazine_obj.display_item_details();
 
