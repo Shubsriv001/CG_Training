@@ -15,9 +15,10 @@ class Program
 
 
 // Below is the object for the Partial class
-// LibraryAnalytics libraryAnalytics_obj=new LibraryAnalytics();
-//         libraryAnalytics_obj.totalborroweditems();
-//         libraryAnalytics_obj.display_analytics(2);
+LibraryAnalytics libraryAnalytics_obj=new LibraryAnalytics();
+        libraryAnalytics_obj.totalborroweditems();
+        libraryAnalytics_obj.display_analytics(2);
+
 
     }
 }
