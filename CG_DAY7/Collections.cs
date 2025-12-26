@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Globalization;
 class Collections{
 
 public static void Main(string[] args)
@@ -295,6 +296,7 @@ public static void Main(string[] args)
 
 // -----------------------------------Hash Set--------------------------
 
+//Add Only the Unique Value. It Ignores the Same Entered or added value.
 
 // HashSet<int> hasSet=new HashSet<int>();
 // hasSet.Add(1);
@@ -306,5 +308,92 @@ public static void Main(string[] args)
             
 // Console.WriteLine(i);
 //         }
+
+//================//===============//===============//===============
+
+
+// -------------------------SortedList------------------------------------
+
+//Sorting be done based on the Key not the value.
+
+// SortedList<string, string> marks = new SortedList<string, string>();
+// marks.Add("c", "C");
+// marks.Add("a", "A");
+// marks.Add("b", "B");
+
+
+//foreach (var item in marks) // this will print the valiue in the sorted order.
+// foreach (var item in marks.Reverse()) // This will Print the values in the reversed order.
+//     Console.WriteLine(item.Key + " " + item.Value);
+
+//================//=====================//=====================//============
+
+// -------------------------Dictionary------------------------------------
+
+// Dictionary<int, string> students = new Dictionary<int, string>();
+// students.Add(1, "Ram");
+// students[2] = "Shyam";
+
+// For loop is not recommended
+// for(int i = 0; i < 2; i++)
+//         {
+
+//             Console.WriteLine(students[i+1]);
+//         }
+
+// ============//======================//===================//===============//===================//=================//
+
+// Q1)Find the frequency of elements in an array using a Dictionary
+
+
+// int[] arr = {1, 2, 3, 2, 1, 4, 2};
+
+// Dictionary<int, int> dicts = new Dictionary<int, int>();
+
+// foreach (int i in arr)
+// {
+//     if (dicts.ContainsKey(i))
+//         dicts[i]++;
+//     else
+//         dicts.Add(i, 1);
+// }
+
+// foreach (var i in dicts)
+// {
+//     Console.WriteLine("Number "+i.Key +" : Present: "+ i.Value+" Times");
+// }
+
+
+
+// Q2)Merge two sorted arrays into a single sorted array.
+// Max Time: 10 minutes
+
+//         int[] arr1 = {1, 3, 5};
+//         int[] arr2 = {2, 4, 6};
+
+// int len = arr1.Length + arr2.Length;
+// int[] arr3 = new int[len];
+
+// int j = 0;
+
+// for (int i = 0; i < arr1.Length; i++)
+// {
+//     arr3[j] = arr1[i];
+//     j++;
+// }
+
+// foreach (int i in arr2)
+// {
+//     arr3[j] = i;
+//     j++;
+// }
+
+// foreach (int i in arr3)
+// {
+//     Console.Write(i + " ");
+// }
+
+
+
     }
 }
