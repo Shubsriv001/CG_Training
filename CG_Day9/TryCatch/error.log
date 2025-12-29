@@ -1,0 +1,2 @@
+29-12-2025 14:19:18 | InsufficientMemoryException | Insufficient balance for withdrawal
+29-12-2025 14:27:55 | InsufficientBalanceException | Withdrawal amount must be greater than zero
