@@ -100,7 +100,6 @@ public static void Main(string[] args) {
                        else
                        {
 
-
                            for (int i = 0; i < arr.Length; i++)
                            {
                                arr[i] = money;

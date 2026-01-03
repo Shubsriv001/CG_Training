@@ -8,7 +8,7 @@ class Enterprise
     {
 
        
-        Console.WriteLine("TASK 1: DYNAMIC PRODUCT PRICE ANALYSIS");
+        Console.WriteLine("DYNAMIC PRODUCT PRICE ANALYSIS");
 
         Console.Write("Enter number of products: ");
         int productCount = int.Parse(Console.ReadLine());
@@ -52,46 +52,12 @@ class Enterprise
         for (int i = 0; i < prices.Length; i++)
             Console.WriteLine($"Index {i} : {prices[i]}");
 
-// ========================================================================================================================
 
-
-        Console.WriteLine("\nTASK 2: BRANCH SALES ANALYSIS");
-
-        Console.Write("Enter number of branches: ");
-        int branches = int.Parse(Console.ReadLine());
-
-        Console.Write("Enter number of months: ");
-        int months = int.Parse(Console.ReadLine());
-
-        int[,] sales = new int[branches, months];
-        int highestSale = 0;
-
-        for (int i = 0; i < branches; i++)
-        {
-            for (int j = 0; j < months; j++)
-            {
-                Console.Write($"Enter sales for Branch {i}, Month {j}: ");
-                sales[i, j] = int.Parse(Console.ReadLine());
-                if (sales[i, j] > highestSale)
-                    highestSale = sales[i, j];
-            }
-        }
-
-        for (int i = 0; i < branches; i++)
-        {
-            int total = 0;
-            for (int j = 0; j < months; j++)
-                total += sales[i, j];
-
-            Console.WriteLine($"Total sales of Branch {i}: {total}");
-        }
-
-        Console.WriteLine($"Highest Monthly Sale: {highestSale}");
 
 // ========================================================================================================================
 
 
-        Console.WriteLine("\nTASK 5: FINANCIAL TRANSACTION FILTERING");
+        Console.WriteLine("FINANCIAL TRANSACTION FILTERING");
 
         Console.Write("Enter number of transactions: ");
         int tCount = int.Parse(Console.ReadLine());
@@ -128,7 +94,7 @@ class Enterprise
 
 // ========================================================================================================================
 
-        Console.WriteLine("\nTASK 6: PROCESS FLOW MANAGEMENT");
+        Console.WriteLine("PROCESS FLOW MANAGEMENT");
 
         Console.Write("Enter number of operations: ");
         int operations = int.Parse(Console.ReadLine());

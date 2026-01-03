@@ -86,7 +86,7 @@ class Program
 
         //-------------------------------------------------------------------------------------------------
     
-        //8)WAPto find whether the given number is positive negative or zero
+        //8)WAP to find whether the given number is positive negative or zero
     
             //Console.WriteLine("Enter the number to find the positive and negative or zero");
 

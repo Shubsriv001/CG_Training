@@ -1,4 +1,11 @@
 using System;
+using System.Collections.Specialized;
+using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
+using System.Numerics;
+using System.Reflection.PortableExecutable;
+using System.Runtime.CompilerServices;
+using System.Text;
 using System.Text.RegularExpressions;
 class RegexExample
 {
@@ -252,23 +259,130 @@ class RegexExample
 
 // --------------------------------------------------------------------------------------------------------------------------
 
-            string sentence="Date:25-12-29"; 
-         string pattern=@"(\d{4})-(\d{2})-(\d{2})"; 
+        //     string sentence="Date:25-12-29"; 
+        //  string pattern=@"(\d{4})-(\d{2})-(\d{2})"; 
 
 
-             Console.WriteLine("From Matches");
+        //      Console.WriteLine("From Matches");
 
-        MatchCollection matches=Regex.Matches(sentence,pattern);
-            foreach (var item in matches)
-            {
-        Console.WriteLine(item);
+        // MatchCollection matches=Regex.Matches(sentence,pattern);
+        //     foreach (var item in matches)
+        //     {
+        // Console.WriteLine(item);
                 
-            }
-             Console.WriteLine("From Match"); // this checks the first occurence and return
-             Match m=Regex.Match(sentence,pattern);
-             Console.WriteLine(m.Value);
+        //     }
+        //      Console.WriteLine("From Match"); // this checks the first occurence and return
+        //      Match m=Regex.Match(sentence,pattern);
+        //      Console.WriteLine(m.Value);
+
+// --------------------------------------------------------------------------------------------------------------------------
+// -----------------------------------Split Mathod---------------------------------------------------------------------------------------
+
+        //     string sentence="A,B;C"; 
+        //  string pattern=@"[,;]"; 
+// --------------------------------------------------------------------------------------------------------------------------
+
 
 // --------------------------------------------------------------------------------------------------------------------------
 
-    }
-}
+
+        // string sentence = "Amount:5000";
+        // string pattern = @"Amount:(?<value>\d+)";
+
+        // // Console.WriteLine("From Matches");
+        // // MatchCollection matches = Regex.Matches(sentence, pattern);
+        // // foreach (Match item in matches)
+        // // {
+        // //     Console.WriteLine(item.Value);
+        // // }
+
+        // Console.WriteLine("From Match");
+        // Match m = Regex.Match(sentence, pattern);
+        // Console.WriteLine(m.Value);
+
+// --------------------------------------------------------------------------------------------------------------------------
+// -----------------------------------Grouped pattern---------------------------------------------------------------------------------------
+
+// ?- this will represent the named argument.
+//<>- this represent group name.
+//()- using this we are specifying the group.
+//Pattern:-@(?<year>\d{4}-(?<nonth>\d{2})-(?<date>\d{2}))
+
+
+        // string pattern = @"(?<year>\d{4})-(?<month>\d{2})-(?<date>\d{2})";
+
+        // // string sentence = "23-02-1992";
+        // string sentence = "1992-02-23";
+        // // string sentence = "1992-01-01";
+        // Console.WriteLine();
+        // Console.WriteLine("From Matches");
+        // MatchCollection matches = Regex.Matches(sentence, pattern);
+        // foreach (Match item in matches)
+        // {
+        //     Console.WriteLine(item.Value);
+        // }
+
+
+        // Console.WriteLine("From Match");
+
+        // Match m = Regex.Match(sentence, pattern);
+
+        // // Console.WriteLine(m.Groups["year"].Value);
+        // // Console.WriteLine(m.Groups["month"].Value);
+
+        // //thisis how we access the named group using index
+        // Console.WriteLine(m.Groups[0].Value); // this will print the entire data 
+        // // Console.WriteLine(m.Groups[1].Value); // this is inly print the year means 0- all, 1- for year, 2- month, 3- date
+
+// --------------------------------------------------------------------------------------------------------------------------
+
+// string input="apple";
+// string pattern=@"a.."; // this will print a+ch-ch
+// // string pattern=@"a...e"; // this will help to print the character between a+ch-ch-ch+e means three character between a and e
+
+// MatchCollection m=Regex.Matches(input,pattern);
+// foreach (Match mt in m)
+// {
+//  System.Console.WriteLine(mt);   
+// }
+
+// ------------------------------------------------------------------
+
+
+
+
+// ---------------------------Return the valid emails-----------------------------------------------------------------------------------------------
+
+string pattern=@"\b[\w.-]+@[\w-]+\.\w{2,}$\b";
+            
+List<string> Emails = new List<string>
+{
+    "john.doe@gmail.com.au",
+    "alice_123@yahoo.in",
+    "mark.smith@company.com",
+    "support-abc@banking.co.in",
+    "user.nametag@domain.org",
+  "john.doe@gmail",            // Missing domain extension
+    "alice@@yahoo.com",        // Double @
+    "mark.smith@.com",         // Domain missing name
+    "support@banking..com",    // Double dot in domain
+    "user name@gmail.com",     // Space not allowed
+    "@domain.com",             // Missing username
+    "admin@domain",            // No top-level domain
+    "info@domain,com",         // Comma instead of dot
+    "finance#dept@corp.com",  
+    "plainaddress"             // Missing @ and domain
+
+};
+
+
+foreach(string input in Emails)
+        {
+        if (Regex.IsMatch(input, pattern))
+        {
+            Console.WriteLine($"Valid Email:   {input}");
+        }
+        }
+        }
+        }
+        

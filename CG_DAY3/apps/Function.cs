@@ -31,7 +31,7 @@
 
     // param should be always at the last
 
-    // NOTE: Params cannot use in,out andd ref
+    // NOTE: Params cannot use in,out and ref
     //  public void add_num(params int[] nums)
     // {
     //     int sum=0;
@@ -46,7 +46,7 @@
         
 
 // ----------------------------------------------------------------------------
-//-----------------------------Pass By value and Pass by Value--------------------------
+//-----------------------------Pass By value and Pass by Reference--------------------------
 
 // 1) Pass By Reference:- When we want to change the value parmanently.
 
@@ -56,7 +56,7 @@
 //         }
 
 // ----------------------------------------------------------------------------------------------
-// Example of out this is use to store the value and return it
+// Example of out: this is use to store the value and return it
 
 // 1) Example
 

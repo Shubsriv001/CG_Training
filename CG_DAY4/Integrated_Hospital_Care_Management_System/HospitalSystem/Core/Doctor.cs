@@ -67,7 +67,7 @@ namespace HospitalSystem.Core
                 arr_doc_present_in_hospital[i] = doctor_present_in_hospital;
             }
         }
-
+    
         public void show_doctors()
         {
             Console.WriteLine();

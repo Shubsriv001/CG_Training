@@ -85,26 +85,28 @@
 
 
 
-using System;
+// using System;
 
-class ResourceHandler : IDisposable
-{
-    public ResourceHandler()
-    {
-        Console.WriteLine("Resource acquired");
-    }
+// class ResourceHandler : IDisposable
+// {
+//     public ResourceHandler()
+//     {
+//         Console.WriteLine("Resource acquired");
+//     }
 
-    public void Dispose()
-    {
-        Console.WriteLine("Resource released");
-    }
+//     public void Dispose()
+//     {
+//         Console.WriteLine("Resource released");
+//     }
 
-    static void Main(string[] args)
-    {
-        using (ResourceHandler resourceHandler = new ResourceHandler())
-        {
-            Console.WriteLine("Resource called...");
-        }
-        
-    }
-}
+//     static void Main(string[] args)
+//     {
+//         using (ResourceHandler resourceHandler = new ResourceHandler())
+//         {
+//             Console.WriteLine("Resource called...");
+//         }
+
+//         Console.WriteLine("End of Program...");
+
+//     }
+// }
