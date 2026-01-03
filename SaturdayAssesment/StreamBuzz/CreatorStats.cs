@@ -1,8 +1,9 @@
-using System;
-class CreatorStats
-{
-   public string CreatorName;
-   public double [] WeeklyLikes;
-    public static List<CreatorStats> EngagementBoard;
+using System.Collections.Generic;
 
+public class CreatorStats
+{
+    public string CreatorName { get; set; }
+    public double[] WeeklyLikes { get; set; }
+
+    public static List<CreatorStats> EngagementBoard = new List<CreatorStats>();
 }
