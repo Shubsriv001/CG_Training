@@ -37,42 +37,46 @@
 // =================//========================//==============================//======================
 
 
-using System;
+// using System;
 
-class Button
-{
-    // Delegates
-    public delegate void ClickHandler();
-    public delegate void HoverHandler();
+// class Button
+// {
+//     // Delegates
+//     public delegate void ClickHandler();
+//     public delegate void HoverHandler();
 
-    // Multiple events
-    public event ClickHandler Clicked;
-    public event HoverHandler Hovered;
+//     // Multiple events
+//     public event ClickHandler Clicked;
+//     public event HoverHandler Hovered;
 
-    // Methods to raise events
-    public void OnClick()
-    {
-        Clicked?.Invoke();
-    }
+//     // Methods to raise events
+//     public void OnClick()
+//     {
+//         Clicked?.Invoke();
+//     }
 
-    public void OnHover()
-    {
-        Hovered?.Invoke();
-    }
-}
+//     public void OnHover()
+//     {
+//         Hovered?.Invoke();
+//     }
+// }
 
-class Events
-{
-    public static void Main()
-    {
-        Button btn = new Button();
+// class Events
+// {
+//     public static void Main()
+//     {
+//         Button btn = new Button();
 
-        // Subscribe events
-        btn.Clicked += () => Console.WriteLine("Button clicked");
-        btn.Hovered += () => Console.WriteLine("Button hovered");
+//         // Subscribe events
+//         btn.Clicked += () => Console.WriteLine("Button clicked");
+//         btn.Hovered += () => Console.WriteLine("Button hovered");
 
-        // Trigger events
-        btn.OnClick();
-        btn.OnHover();
-    }
-}
+//         // Trigger events
+//         btn.OnClick();
+//         btn.OnHover();
+//     }
+// }
+
+
+
+// ==========================//==========================//=====================================//=============================

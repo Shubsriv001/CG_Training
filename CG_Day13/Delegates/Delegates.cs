@@ -1,4 +1,4 @@
-// // this is the example of single casting delegates
+// // this is the example of========== single casting delegates ===============
 // using System;
 
 
@@ -97,7 +97,7 @@
 
 
 
-// ==========================//==========================//=======================//======================
+// ==========================//============ Action Delegate==============//=======================//======================
 
 // No return type mostly used for logging purpose
 
@@ -118,7 +118,7 @@
 
 
 //============================//========= Func Delegates ==================//=========================
-// have return type mostly used for single line function
+// have return type mostly used for single line function last aparemeter is the return type
 
 // using System;
 // class Delegate
@@ -134,9 +134,9 @@
 // }
 
 
-//==============================//========================//=================
+//==============================//==== Predicate Delegate ====================//=================
 
-//Return the boolean use for validation and filtering 
+//Return the boolean use for validation and filtering , only accept one parameter.
 
 // using System;
 // class Delegate
