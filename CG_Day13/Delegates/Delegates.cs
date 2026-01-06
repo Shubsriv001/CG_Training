@@ -160,7 +160,7 @@
 //============================== Anonymous Delegate =======================
 
 // these are one time use 
-// using System;
+using System;
 
 // delegate void ErrorDelegate(string message);
 // class Delegate
@@ -168,11 +168,17 @@
 //     static void Main()
 
 //     {
-//             ErrorDelegate errorHandler= delegate(string msg)
-//             {
-//                 Console.WriteLine("Error: "+msg);
-//             };
-//             errorHandler("File not found");
+//             // ErrorDelegate errorHandler= delegate(string msg)
+//             // {
+//             //     Console.WriteLine("Error: "+msg);
+//             // };
+//             // errorHandler("File not found");
+
+//            Comparison<int> sortDescending =(a,b)=> b.CompareTo(a);
+//            Console.WriteLine(sortDescending(5,10)); //1 as a<
+//            Console.WriteLine(sortDescending(5,5)); //0 a==b
+//            Console.WriteLine(sortDescending(10,5)); // -1 a>b
+           
 //     }
 
 // }
@@ -180,3 +186,6 @@
 
 
 // ===========//=======================//===================//===================
+
+
+

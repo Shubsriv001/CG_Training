@@ -1,45 +1,45 @@
-using System;
-using System.Threading;
+// using System;
+// using System.Threading;
 
-namespace CallbackDemo
-{
-    // STEP 1: Define the Delegate
-    public delegate void DownloadFinishedHandler(string fileName);
+// namespace CallbackDemo
+// {
+//     // STEP 1: Define the Delegate
+//     public delegate void DownloadFinishedHandler(string fileName);
 
-    class FileDownloader
-    {
-        // STEP 2: Method that accepts the callback
-        public void DownloadFile(string name, DownloadFinishedHandler callback) //callback is the instance of the delegate
-        {
-            Console.WriteLine($"Starting download: {name}...");
+//     class FileDownloader
+//     {
+//         // STEP 2: Method that accepts the callback
+//         public void DownloadFile(string name, DownloadFinishedHandler callback) //callback is the instance of the delegate
+//         {
+//             Console.WriteLine($"Starting download: {name}...");
             
-            // Simulating work
-            Thread.Sleep(2000); 
+//             // Simulating work
+//             Thread.Sleep(2000); 
             
-            Console.WriteLine($"{name} download complete.");
+//             Console.WriteLine($"{name} download complete.");
 
-            // STEP 3: Execute the Callback
-            if (callback != null)
-            {
-                callback(name); 
-            }
-        }
-    }
+//             // STEP 3: Execute the Callback
+//             if (callback != null)
+//             {
+//                 callback(name); 
+//             }
+//         }
+//     }
 
-    class Program
-    {
-        // STEP 4: The actual Callback Method
-        static void DisplayNotification(string file)
-        {
-            Console.WriteLine($"NOTIFICATION: You can now open {file}.");
-        }
+//     class Program
+//     {
+//         // STEP 4: The actual Callback Method
+//         static void DisplayNotification(string file)
+//         {
+//             Console.WriteLine($"NOTIFICATION: You can now open {file}.");
+//         }
 
-        static void Main()
-        {
-            FileDownloader downloader = new FileDownloader();
+//         static void Main()
+//         {
+//             FileDownloader downloader = new FileDownloader();
 
-            // Pass the method 'DisplayNotification' as a callback
-            downloader.DownloadFile("Presentation.pdf", DisplayNotification);
-        }
-    }
-}
+//             // Pass the method 'DisplayNotification' as a callback
+//             downloader.DownloadFile("Presentation.pdf", DisplayNotification);
+//         }
+//     }
+// }
