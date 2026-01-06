@@ -159,19 +159,24 @@
 
 //============================== Anonymous Delegate =======================
 
-using System;
+// these are one time use 
+// using System;
 
-delegate void ErrorDelegate(string message);
-class Delegate
-{
-    static void Main()
+// delegate void ErrorDelegate(string message);
+// class Delegate
+// {
+//     static void Main()
 
-    {
-            ErrorDelegate errorHandler= delegate(string msg)
-            {
-                System.Console.WriteLine("Error: "+msg);
-            };
-            errorHandler("File not found");
-    }
+//     {
+//             ErrorDelegate errorHandler= delegate(string msg)
+//             {
+//                 Console.WriteLine("Error: "+msg);
+//             };
+//             errorHandler("File not found");
+//     }
 
-}
+// }
+
+
+
+// ===========//=======================//===================//===================
