@@ -99,6 +99,8 @@
 
 // ==========================//==========================//=======================//======================
 
+// No return type mostly used for logging purpose
+
 // using System;
 
 // class Delegate
@@ -115,16 +117,37 @@
 
 
 
-//============================//===========================//=========================
+//============================//========= Func Delegates ==================//=========================
+// have return type mostly used for single line function
+
+// using System;
+// class Delegate
+// {
+//     static void Main()
+
+//     {
+//         // input type , input, return
+//         Func<decimal, decimal, decimal> calculateDiscount=(price, discount)=>price-(price*discount/100);
+//        Console.WriteLine(calculateDiscount(1000,10));
+//     }
+
+// }
+
+
+//==============================//========================//=================
+
+//Return the boolean use for validation and filtering 
+
 using System;
 class Delegate
 {
     static void Main()
 
     {
-        // input type , input, return
-        Func<decimal, decimal, decimal> calculateDiscount=(price, discount)=>price-(price*discount/100);
-       Console.WriteLine(calculateDiscount(1000,10));
+        // here it take the int type parameter...
+        
+        Predicate<int> IsEligible=age=>age>=18;
+        Console.WriteLine(IsEligible(20));        
     }
 
 }
