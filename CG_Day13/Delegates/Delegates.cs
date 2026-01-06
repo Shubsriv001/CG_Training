@@ -138,16 +138,40 @@
 
 //Return the boolean use for validation and filtering 
 
+// using System;
+// class Delegate
+// {
+//     static void Main()
+
+//     {
+//         // here it take the int type parameter...
+
+//         Predicate<int> IsEligible=age=>age>=18;
+//         Console.WriteLine(IsEligible(20));        
+//     }
+
+// }
+
+
+
+
+//==========================//=================//===================//===============
+
+//============================== Anonymous Delegate =======================
+
 using System;
+
+delegate void ErrorDelegate(string message);
 class Delegate
 {
     static void Main()
 
     {
-        // here it take the int type parameter...
-        
-        Predicate<int> IsEligible=age=>age>=18;
-        Console.WriteLine(IsEligible(20));        
+            ErrorDelegate errorHandler= delegate(string msg)
+            {
+                System.Console.WriteLine("Error: "+msg);
+            };
+            errorHandler("File not found");
     }
 
 }
