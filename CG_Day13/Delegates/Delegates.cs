@@ -62,35 +62,69 @@
 // -------------------------------Multicast Delegates------------------------------------------
 
 
+// using System;
+
+// delegate void OrderDelegate(string orderId);
+
+
+// class NotificationService
+// {
+//     public void  SendEmail(string id)
+//     {
+//         Console.WriteLine("Email Send for order "+ id);
+//     }
+//     public void SendSMS(string id)
+//     {
+//         Console.WriteLine("SMS Send for order "+ id);
+//     }
+// }
+
+
+// class Delegate
+// {
+//     public static void Main(string[] args)
+//     {
+//         NotificationService service=new NotificationService();
+
+//         OrderDelegate notify=null;
+//         notify+=service.SendEmail;
+//         notify+=service.SendSMS;
+
+//         notify("ORD1001");
+        
+//     }
+// }
+
+
+
+// ==========================//==========================//=======================//======================
+
+// using System;
+
+// class Delegate
+// {
+//     static void Main()
+//     {
+//         Action<string> logActivity=message=>
+//         Console.WriteLine("Log Entry: "+message);
+//         logActivity("User Logged in at 10:30 AM");
+//     }
+
+// }
+
+
+
+
+//============================//===========================//=========================
 using System;
-
-delegate void OrderDelegate(string orderId);
-
-
-class NotificationService
-{
-    public void  SendEmail(string id)
-    {
-        Console.WriteLine("Email Send for order "+ id);
-    }
-    public void SendSMS(string id)
-    {
-        Console.WriteLine("SMS Send for order "+ id);
-    }
-}
-
-
 class Delegate
 {
-    public static void Main(string[] args)
+    static void Main()
+
     {
-        NotificationService service=new NotificationService();
-
-        OrderDelegate notify=null;
-        notify+=service.SendEmail;
-        notify+=service.SendSMS;
-
-        notify("ORD1001");
-        
+        // input type , input, return
+        Func<decimal, decimal, decimal> calculateDiscount=(price, discount)=>price-(price*discount/100);
+       Console.WriteLine(calculateDiscount(1000,10));
     }
+
 }
