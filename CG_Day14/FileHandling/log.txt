@@ -1,0 +1,3 @@
+Application Started
+Data Processed
+Application Ended
