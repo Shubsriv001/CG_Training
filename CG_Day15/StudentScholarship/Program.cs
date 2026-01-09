@@ -22,6 +22,12 @@ public class Student
                 studentEligible += s.Name + ", ";
             }
         }
+
+        if (studentEligible.Length > 2)
+        {
+            studentEligible=studentEligible.Substring(0, studentEligible.Length-2);
+        }
+
         return studentEligible;
     }
 }
