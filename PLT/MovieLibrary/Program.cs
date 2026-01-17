@@ -22,8 +22,7 @@ class Program
         Console.WriteLine("Please enter the name to search the film:");
         string filmName = Console.ReadLine();
 
-        // filmLibrary_obj.RemoveFilm();
-
+        filmLibrary_obj.RemoveFilm();
         filmLibrary_obj.SearchFilms(filmName);
         Console.WriteLine();
     }

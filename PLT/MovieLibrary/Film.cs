@@ -27,20 +27,23 @@ class FilmLibrary
         }
     }
 
-    // public void RemoveFilm()
-    // {
-    //     Console.WriteLine("Enter the Movie Name to be removed:");
-    //     string movieName = Console.ReadLine();
-
-    //         foreach (var item in _films)
-    //         {
-                
-    //     if (item.Title.Contains(movieName))
-    //     {
-    //         _films.Remove();
-    //     }
-    //         }
-    // }
+    public void RemoveFilm()
+{
+    Console.WriteLine("Enter the Movie Name to be removed:");
+    string movieName = Console.ReadLine();
+    Film filmToRemove = null;
+    foreach (var item in _films)
+    {
+        if (item.Title != null &&
+            item.Title.Contains(movieName, StringComparison.OrdinalIgnoreCase))
+        {
+            filmToRemove = item;
+            break; 
+        }
+    }
+        Console.WriteLine("Updated Film List:");
+        GetTotalFilms();
+    }
 
     
 
