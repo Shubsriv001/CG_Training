@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Diagnostics;
+Trace.WriteLine("Application Execution Started");
 
 class Chocolate
 {
