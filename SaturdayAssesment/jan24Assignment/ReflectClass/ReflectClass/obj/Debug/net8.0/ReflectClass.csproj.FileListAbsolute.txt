@@ -1,0 +1,11 @@
+C:\Users\Shubhanshu Srivastav\Desktop\C_SHARP\ReflectClass\ReflectClass\bin\Debug\net8.0\ReflectClass.deps.json
+C:\Users\Shubhanshu Srivastav\Desktop\C_SHARP\ReflectClass\ReflectClass\bin\Debug\net8.0\ReflectClass.dll
+C:\Users\Shubhanshu Srivastav\Desktop\C_SHARP\ReflectClass\ReflectClass\bin\Debug\net8.0\ReflectClass.pdb
+C:\Users\Shubhanshu Srivastav\Desktop\C_SHARP\ReflectClass\ReflectClass\obj\Debug\net8.0\ReflectClass.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Shubhanshu Srivastav\Desktop\C_SHARP\ReflectClass\ReflectClass\obj\Debug\net8.0\ReflectClass.AssemblyInfoInputs.cache
+C:\Users\Shubhanshu Srivastav\Desktop\C_SHARP\ReflectClass\ReflectClass\obj\Debug\net8.0\ReflectClass.AssemblyInfo.cs
+C:\Users\Shubhanshu Srivastav\Desktop\C_SHARP\ReflectClass\ReflectClass\obj\Debug\net8.0\ReflectClass.csproj.CoreCompileInputs.cache
+C:\Users\Shubhanshu Srivastav\Desktop\C_SHARP\ReflectClass\ReflectClass\obj\Debug\net8.0\ReflectClass.dll
+C:\Users\Shubhanshu Srivastav\Desktop\C_SHARP\ReflectClass\ReflectClass\obj\Debug\net8.0\refint\ReflectClass.dll
+C:\Users\Shubhanshu Srivastav\Desktop\C_SHARP\ReflectClass\ReflectClass\obj\Debug\net8.0\ReflectClass.pdb
+C:\Users\Shubhanshu Srivastav\Desktop\C_SHARP\ReflectClass\ReflectClass\obj\Debug\net8.0\ref\ReflectClass.dll
