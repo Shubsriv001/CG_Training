@@ -20,6 +20,7 @@ class ShipmentDetails:Shipment
             code+=ShipmentCode[i];
         }
        
+       
        char c=ShipmentCode[3];
         if(ShipmentCode.Length==7 && code=="GC#" && char.IsDigit(c))
         {
