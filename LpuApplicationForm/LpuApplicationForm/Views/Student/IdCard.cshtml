@@ -1,0 +1,329 @@
+@model LpuApplicationForm.Models.StudentModel
+@{
+    Layout = null;
+    var currentYear = DateTime.Now.Year;
+    var validUntil = DateTime.Now.AddYears(4).Year;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student ID Card - @Model.FullName</title>
+    <style>
+        @@media print {
+            .no-print { display: none; }
+            body { margin: 0; }
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            margin: 0;
+        }
+
+        .id-card-container {
+            perspective: 1000px;
+        }
+
+        .id-card {
+            width: 350px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+            position: relative;
+        }
+
+        .id-card-header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        .university-logo {
+            width: 60px;
+            height: 60px;
+            background: white;
+            border-radius: 50%;
+            margin: 0 auto 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 24px;
+            color: #1e3c72;
+            border: 3px solid #ffd700;
+        }
+
+        .university-name {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .university-subtitle {
+            font-size: 11px;
+            margin: 5px 0 0 0;
+            opacity: 0.9;
+        }
+
+        .id-card-body {
+            padding: 25px;
+            background: white;
+        }
+
+        .student-photo-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .student-photo {
+            width: 120px;
+            height: 120px;
+            border-radius: 10px;
+            object-fit: cover;
+            border: 4px solid #1e3c72;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        .student-id-number {
+            text-align: center;
+            font-size: 16px;
+            font-weight: bold;
+            color: #1e3c72;
+            margin: 15px 0;
+            padding: 8px;
+            background: #f0f4ff;
+            border-radius: 5px;
+            letter-spacing: 2px;
+        }
+
+        .info-section {
+            margin-bottom: 12px;
+        }
+
+        .info-label {
+            font-size: 11px;
+            color: #666;
+            text-transform: uppercase;
+            font-weight: 600;
+            margin-bottom: 3px;
+            letter-spacing: 0.5px;
+        }
+
+        .info-value {
+            font-size: 14px;
+            color: #333;
+            font-weight: 500;
+            padding: 5px 0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .id-card-footer {
+            background: #f8f9fa;
+            padding: 15px;
+            text-align: center;
+            border-top: 2px solid #1e3c72;
+        }
+
+        .validity {
+            font-size: 11px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+
+        .signature-section {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 15px;
+            padding-top: 10px;
+        }
+
+        .signature {
+            text-align: center;
+            flex: 1;
+        }
+
+        .signature-line {
+            border-top: 1px solid #333;
+            margin-top: 30px;
+            padding-top: 5px;
+            font-size: 10px;
+            color: #666;
+        }
+
+        .barcode {
+            text-align: center;
+            margin-top: 10px;
+            font-family: 'Courier New', monospace;
+            font-size: 20px;
+            letter-spacing: 2px;
+            color: #333;
+        }
+
+        .action-buttons {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .btn {
+            padding: 12px 30px;
+            margin: 0 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 14px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s;
+        }
+
+        .btn-print {
+            background: #28a745;
+            color: white;
+        }
+
+        .btn-print:hover {
+            background: #218838;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        .btn-back {
+            background: #6c757d;
+            color: white;
+        }
+
+        .btn-back:hover {
+            background: #5a6268;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        .watermark {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-45deg);
+            font-size: 60px;
+            color: rgba(30, 60, 114, 0.05);
+            font-weight: bold;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .card-content {
+            position: relative;
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="id-card-container">
+        <div class="id-card">
+            <div class="watermark">LPU</div>
+            <div class="card-content">
+                <div class="id-card-header">
+                    <div class="university-logo">LPU</div>
+                    <h1 class="university-name">Lovely Professional University</h1>
+                    <p class="university-subtitle">Phagwara, Punjab, India</p>
+                </div>
+
+                <div class="id-card-body">
+                    <div class="student-photo-container">
+                        @if (Model.ProfileImage != null)
+                        {
+                            var base64 = Convert.ToBase64String(Model.ProfileImage);
+                            var imgSrc = $"data:image/{Model.ImageExtension?.TrimStart('.')};base64,{base64}";
+                            <img src="@imgSrc" alt="@Model.FullName" class="student-photo" />
+                        }
+                        else
+                        {
+                            <div class="student-photo" style="background: #e0e0e0; display: flex; align-items: center; justify-content: center; color: #999;">
+                                No Photo
+                            </div>
+                        }
+                    </div>
+
+                    <div class="student-id-number">
+                        ID: LPU@(currentYear)@(Model.StudentId.ToString("D5"))
+                    </div>
+
+                    <div class="info-section">
+                        <div class="info-label">Student Name</div>
+                        <div class="info-value">@Model.FullName</div>
+                    </div>
+
+                    <div class="info-section">
+                        <div class="info-label">Course</div>
+                        <div class="info-value">@Model.CourseApplied</div>
+                    </div>
+
+                    <div class="info-section">
+                        <div class="info-label">Date of Birth</div>
+                        <div class="info-value">@Model.DOB?.ToString("dd MMM yyyy")</div>
+                    </div>
+
+                    <div class="info-section">
+                        <div class="info-label">Blood Group</div>
+                        <div class="info-value">@Model.Gender</div>
+                    </div>
+
+                    <div class="info-section">
+                        <div class="info-label">Contact</div>
+                        <div class="info-value">@Model.Mobile</div>
+                    </div>
+
+                    <div class="info-section">
+                        <div class="info-label">Email</div>
+                        <div class="info-value" style="font-size: 12px;">@Model.Email</div>
+                    </div>
+                </div>
+
+                <div class="id-card-footer">
+                    <div class="validity">
+                        <strong>Valid From:</strong> @currentYear - @validUntil
+                    </div>
+                    
+                    <div class="signature-section">
+                        <div class="signature">
+                            <div class="signature-line">Student Signature</div>
+                        </div>
+                        <div class="signature">
+                            <div class="signature-line">Authorized Signature</div>
+                        </div>
+                    </div>
+
+                    <div class="barcode">
+                        ||||| |||| ||| |||| |||||
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="action-buttons no-print">
+            <button onclick="window.print()" class="btn btn-print">🖨️ Print ID Card</button>
+            <a href="/Student" class="btn btn-back">← Back to List</a>
+        </div>
+    </div>
+
+    <script>
+        // Auto-focus for printing
+        window.onload = function() {
+            // Optional: Auto-print on load
+            // window.print();
+        };
+    </script>
+</body>
+</html>
