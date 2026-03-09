@@ -13,8 +13,6 @@ class Program
        string data=obj.ReadUserFromFile();
        Console.WriteLine(data);
 
-
-
     // ----------------------Task 2 object----------------------
        UserBinaryManager Bobj=new UserBinaryManager();
        Bobj.SaveUserBinary(101,"Bob");
@@ -33,9 +31,6 @@ class Program
     FMobj.CreateFile(file);
     Console.WriteLine(FMobj.CheckFileExists(file));
     
-
-
-
 
     }
 }

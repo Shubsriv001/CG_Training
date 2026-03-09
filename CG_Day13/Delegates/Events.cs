@@ -6,7 +6,7 @@
 //     public delegate void ClickHandler();
 
 //     // step2: Declare an event
-//     public event ClickHandler Clicked; // Clicke is the name of the event
+//     public event ClickHandler Clicked; // Clicked is the name of the event
 
 //     // step3: Method that raises the event
 //     public void Click()

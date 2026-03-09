@@ -23,13 +23,13 @@ class SerialClass
             Name = "Alice"
         };
 
-        // // string json = JsonSerializer.Serialize(user);
-        // // File.WriteAllText("user.json", json);
-        // // Console.WriteLine("User Serialization Successfully");
+        string json = JsonSerializer.Serialize(user);
+        File.WriteAllText("user.json", json);
+        Console.WriteLine("User Serialization Successfully");
 
         // // below is the code to read the json file data.
-        // string json = File.ReadAllText("user.json");
-        // Console.WriteLine(json);
+        string json = File.ReadAllText("user.json");
+        Console.WriteLine(json);
 
         // // below is the code for Deserialization
         // User loadUser = JsonSerializer.Deserialize<User>(json)!;

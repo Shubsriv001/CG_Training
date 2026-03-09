@@ -1,19 +1,19 @@
-using System;
-using System.IO;
+// using System;
+// using System.IO;
 
-class FileExample
-{
+// class FileExample
+// {
 
 
-     class User
-    {
-        public int Id;
-        public string? Name;
-    }
+//      class User
+//     {
+//         public int Id;
+//         public string? Name;
+//     }
 
     //if the file is not created then it will create one else write in the same file
-    public static void Main(string[] args)
-    {
+    // public static void Main(string[] args)
+    // {
     //     string path = "data3.txt";
 
     //     // this is use to write the data into the file...
@@ -23,7 +23,7 @@ class FileExample
     //     // this is use too read the data  from the file...
     //    string data= File.ReadAllText(path);
 
-    //    System.Console.WriteLine(data);
+    //    Console.WriteLine(data);
     //     Console.WriteLine("Task completed");
 
 
@@ -94,7 +94,7 @@ class FileExample
         // ============================Below is the example of binary Writer and the reader===========================
 
 
-    User user=new User{Id=2,Name="Bob"};
+    // User user=new User{Id=2,Name="Bob"};
 
             //for creating and writing bin file
     // using(BinaryWriter writer=new BinaryWriter(File.Open("user.bin", FileMode.Create)))
@@ -108,12 +108,12 @@ class FileExample
 
         // Reading Binary data
 
-        using(BinaryReader reader=new BinaryReader(File.Open("user.bin", FileMode.Open)))
-        {
-            Console.WriteLine(reader.ReadInt32());
-            Console.WriteLine(reader.ReadString());
-        }
+        // using(BinaryReader reader=new BinaryReader(File.Open("user.bin", FileMode.Open)))
+        // {
+        //     Console.WriteLine(reader.ReadInt32());
+        //     Console.WriteLine(reader.ReadString());
+        // }
 
 
-    }
-}
+//     }
+// }
