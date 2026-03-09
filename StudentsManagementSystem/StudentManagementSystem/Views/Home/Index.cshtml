@@ -1,0 +1,56 @@
+﻿@{
+    ViewData["Title"] = "Student Management System";
+}
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-8 mx-auto">
+            <div class="card shadow">
+                <div class="card-body text-center py-5">
+                    <h1 class="display-4 mb-4">Welcome to SMS</h1>
+                    <p class="lead mb-4">Student Management System</p>
+
+                    <div class="row mt-5">
+                        <div class="col-md-6">
+                            <div class="card bg-light">
+                                <div class="card-body">
+                                    <h5 class="card-title">Student Login</h5>
+                                    <p class="card-text">Login to view and manage your student profile, marks, and hostel information.</p>
+                                    <a href="/auth/login" class="btn btn-primary w-100">Login</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="card bg-light">
+                                <div class="card-body">
+                                    <h5 class="card-title">New Student?</h5>
+                                    <p class="card-text">Create a new account to get started with the Student Management System.</p>
+                                    <a href="/auth/register" class="btn btn-success w-100">Register</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-5">
+                        <h5>Features</h5>
+                        <ul class="list-unstyled">
+                            <li><i class="bi bi-check-circle"></i> User Authentication & Authorization</li>
+                            <li><i class="bi bi-check-circle"></i> Student Registration & Profile Management</li>
+                            <li><i class="bi bi-check-circle"></i> Academic Records Management</li>
+                            <li><i class="bi bi-check-circle"></i> Hostel Information Management</li>
+                            <li><i class="bi bi-check-circle"></i> ID Card Generation</li>
+                            <li><i class="bi bi-check-circle"></i> Admin Dashboard for Student Management</li>
+                        </ul>
+                    </div>
+
+                    <div class="alert alert-info mt-4">
+                        <strong>Demo Admin Account:</strong><br>
+                        Email: admin@studentmgmt.com<br>
+                        Password: Admin@123
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,48 @@
+@model Hostel
+
+@{
+    ViewData["Title"] = "Create Hostel";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow">
+                <div class="card-header bg-success text-white">
+                    <h4 class="mb-0">Create New Hostel</h4>
+                </div>
+                <div class="card-body">
+                    <form method="post">
+                        <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
+
+                        <div class="mb-3">
+                            <label asp-for="HostelName" class="form-label">Hostel Name *</label>
+                            <input type="text" asp-for="HostelName" class="form-control" placeholder="Enter hostel name">
+                            <span asp-validation-for="HostelName" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="RoomNumber" class="form-label">Room Number *</label>
+                            <input type="text" asp-for="RoomNumber" class="form-control" placeholder="Enter room number">
+                            <span asp-validation-for="RoomNumber" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="Address" class="form-label">Address</label>
+                            <textarea asp-for="Address" class="form-control" rows="3" placeholder="Enter address"></textarea>
+                        </div>
+
+                        <div class="mt-4">
+                            <button type="submit" class="btn btn-success">Create</button>
+                            <a href="/admin/manage-hostels" class="btn btn-secondary">Cancel</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

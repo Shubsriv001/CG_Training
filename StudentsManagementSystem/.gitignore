@@ -1,0 +1,67 @@
+# ==========================================
+# .NET & VS Code Standard GitIgnore
+# ==========================================
+
+## --- .NET Build & Binary Outputs ---
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+publish/
+*.exe
+*.dll
+*.pdb
+*.nupkg
+
+## --- Visual Studio & IDE Artifacts ---
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+.idea/
+*.swp
+*~
+
+## --- VS Code Specific ---
+# Ignore the workspace folder, but keep the debugger configs
+.vscode/*
+!.vscode/launch.json
+!.vscode/tasks.json
+!.vscode/settings.json
+*.code-workspace
+
+## --- Secrets & Environment ---
+# NEVER commit your connection strings or API keys
+appsettings.Development.json
+appsettings.Local.json
+.env
+.env.*
+secrets.json
+
+## --- Databases ---
+# If you are using SQLite or LocalDB for your Student System
+*.db
+*.db-shm
+*.db-wal
+*.mdf
+*.ldf
+
+## --- OS Specific ---
+# Windows system files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS (if you ever collaborate with Mac users)
+.DS_Store
+
+## --- Node / Frontend (If applicable) ---
+node_modules/
+dist/
+.npm/
+
+## --- Logs ---
+*.log
+logs/

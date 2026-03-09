@@ -1,0 +1,150 @@
+@model Student
+
+@{
+    ViewData["Title"] = "Student Registration Form";
+}
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-8 mx-auto">
+            <div class="card shadow">
+                <div class="card-header bg-primary text-white">
+                    <h4 class="mb-0">Student Registration Form</h4>
+                </div>
+                <div class="card-body">
+                    <form method="post">
+                        <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
+
+                        <h5 class="mt-4 mb-3">Personal Information</h5>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label asp-for="StudentName" class="form-label">Student Name *</label>
+                                <input type="text" asp-for="StudentName" class="form-control" placeholder="Enter student name">
+                                <span asp-validation-for="StudentName" class="text-danger"></span>
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+                                <label asp-for="FatherName" class="form-label">Father Name *</label>
+                                <input type="text" asp-for="FatherName" class="form-control" placeholder="Enter father's name">
+                                <span asp-validation-for="FatherName" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label asp-for="Email" class="form-label">Email *</label>
+                                <input type="email" asp-for="Email" class="form-control" placeholder="Enter email">
+                                <span asp-validation-for="Email" class="text-danger"></span>
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+                                <label asp-for="Phone" class="form-label">Phone *</label>
+                                <input type="tel" asp-for="Phone" class="form-control" placeholder="Enter phone number">
+                                <span asp-validation-for="Phone" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="Address" class="form-label">Address</label>
+                            <textarea asp-for="Address" class="form-control" rows="2" placeholder="Enter address"></textarea>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="DateOfBirth" class="form-label">Date of Birth *</label>
+                            <input type="date" asp-for="DateOfBirth" class="form-control">
+                            <span asp-validation-for="DateOfBirth" class="text-danger"></span>
+                        </div>
+
+                        <h5 class="mt-4 mb-3">Academic Information</h5>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label asp-for="Semester" class="form-label">Semester *</label>
+                                <select asp-for="Semester" class="form-control">
+                                    <option value="">Select Semester</option>
+                                    <option value="1">1st Semester</option>
+                                    <option value="2">2nd Semester</option>
+                                    <option value="3">3rd Semester</option>
+                                    <option value="4">4th Semester</option>
+                                    <option value="5">5th Semester</option>
+                                    <option value="6">6th Semester</option>
+                                    <option value="7">7th Semester</option>
+                                    <option value="8">8th Semester</option>
+                                </select>
+                                <span asp-validation-for="Semester" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="alert alert-info">
+                            <strong>Subject Marks:</strong> Enter marks out of 100 for each subject
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label asp-for="Subject1Marks" class="form-label">Subject 1 Marks *</label>
+                                <input type="number" asp-for="Subject1Marks" class="form-control" min="0" max="100" step="0.01" placeholder="0">
+                                <span asp-validation-for="Subject1Marks" class="text-danger"></span>
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+                                <label asp-for="Subject2Marks" class="form-label">Subject 2 Marks *</label>
+                                <input type="number" asp-for="Subject2Marks" class="form-control" min="0" max="100" step="0.01" placeholder="0">
+                                <span asp-validation-for="Subject2Marks" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label asp-for="Subject3Marks" class="form-label">Subject 3 Marks *</label>
+                                <input type="number" asp-for="Subject3Marks" class="form-control" min="0" max="100" step="0.01" placeholder="0">
+                                <span asp-validation-for="Subject3Marks" class="text-danger"></span>
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+                                <label asp-for="Subject4Marks" class="form-label">Subject 4 Marks *</label>
+                                <input type="number" asp-for="Subject4Marks" class="form-control" min="0" max="100" step="0.01" placeholder="0">
+                                <span asp-validation-for="Subject4Marks" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label asp-for="Subject5Marks" class="form-label">Subject 5 Marks *</label>
+                                <input type="number" asp-for="Subject5Marks" class="form-control" min="0" max="100" step="0.01" placeholder="0">
+                                <span asp-validation-for="Subject5Marks" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <h5 class="mt-4 mb-3">Hostel Information</h5>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="HostelId" class="form-label">Hostel Name</label>
+                                <select name="HostelId" id="HostelId" class="form-control">
+                                    <option value="">-- Select Hostel (Optional) --</option>
+                                    @if (ViewBag.Hostels != null)
+                                    {
+                                        @foreach (var hostel in ViewBag.Hostels)
+                                        {
+                                            <option value="@hostel.HostelId">@hostel.HostelName - Room @hostel.RoomNumber</option>
+                                        }
+                                    }
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="mt-4">
+                            <button type="submit" class="btn btn-primary">Register</button>
+                            <a href="/dashboard" class="btn btn-secondary">Cancel</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
