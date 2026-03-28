@@ -1,0 +1,14 @@
+using System.Text.Json.Serialization;
+
+namespace UniversityApi.Models
+{
+    public class InstructorCourse
+    {
+        public int InstructorId { get; set; }
+        [JsonIgnore]
+        public Instructor? Instructor { get; set; }
+        public int CourseId { get; set; }
+        [JsonIgnore]
+        public Course? Course { get; set; }
+    }
+}
